@@ -26,7 +26,7 @@ public class LoginPage {
 		System.out.println(title);*/
 		
 		//find element username and password and enter wrong information and click on login and print validation message
-		driver.findElement(By.xpath(".//*[@id='user[username]']")).sendKeys("1233 ");
+		driver.findElement(By.xpath(".//*[@id='user[username]']")).sendKeys("12334 ");
 		driver.findElement(By.xpath(".//*[@id='user[password]']")).sendKeys("3243 ");
 		driver.findElement(By.xpath(".//*[@id='Login']")).click();
 		String str=driver.findElement(By.xpath(".//*[@id='ajax_message']/p")).getText();
